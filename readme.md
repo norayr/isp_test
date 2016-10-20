@@ -6,7 +6,7 @@ That happens because
 IF u IS Piece
 ```
 
-in the procedure Read always returns TRUE on 64bit systems, while it returns false on 32bit systems.
+in the procedure Read may return TRUE on 64bit systems, while in the same situation it returns FALSE on 32bit systems.
 
 64bit system:
 ![](https://raw.githubusercontent.com/norayr/isp_test/master/screenshot_x86_64_texts.read.png)
