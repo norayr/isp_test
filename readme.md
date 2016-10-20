@@ -14,11 +14,11 @@ in the procedure Read may return TRUE on 64bit systems, while in the same situat
 32bit system:
 ![](https://raw.githubusercontent.com/norayr/isp_test/master/screenshot_x86_texts.read.png)
 
-Most likely this happens because the macro
+This is the macro which implements the IS test:
 
 ```
 #define __ISP(p, typ, level)  __IS(__TYPEOF(p),typ,level)
 ```
 
-in SYSTEM.h does not work correct on 64bit systems.
+It's in SYSTEM.h, and does not work correctly on 64bit systems.
 
